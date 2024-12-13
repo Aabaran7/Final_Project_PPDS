@@ -89,8 +89,8 @@ function RecommendationItem({ item, setImageUrl }) {
     const [fetchedImage, setFetchedImage] = useState(null);
 
 
-    //const backendUrl = 'https://spexy-backend-159238452229.us-central1.run.app'
-    const backendUrl = process.env.REACT_APP_BACKEND_URL
+    const backendUrl = 'https://spexy-backend-159238452229.us-central1.run.app'
+    //const backendUrl = process.env.REACT_APP_BACKEND_URL
     const handleTryClick = async (link) => {
         try {
             const response = await axios.get(
